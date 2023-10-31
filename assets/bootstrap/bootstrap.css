@@ -101,7 +101,8 @@ hr:not([size]) {
 
 h3, h2, h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0px;
+  /* margin-bottom: 0.5rem; */
   font-weight: 500;
   line-height: 1.2;
 }
@@ -147,22 +148,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
-}
-
-h5, .h5 {
-  font-size: 1.25rem;
-}
-
-h6, .h6 {
-  font-size: 1rem;
-} */
 
 
 
