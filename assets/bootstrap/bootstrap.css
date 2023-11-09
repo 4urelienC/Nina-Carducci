@@ -5452,7 +5452,11 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
-.modal {
+/* 
+///////////////////////////////////////////////////////////// MODAL START /////////////////////////////////////////////////////
+*/
+
+ .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -5468,18 +5472,18 @@ textarea.form-control-lg {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0.5rem;
+  Height: auto;
   pointer-events: none;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
-@media (prefers-reduced-motion: reduce) {
+ @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
     transition: none;
   }
-}
+} 
 .modal.show .modal-dialog {
   transform: none;
 }
@@ -5504,18 +5508,19 @@ textarea.form-control-lg {
   min-height: calc(100% - 1rem);
 }
 
-.modal-content {
+ .modal-content {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
-}
+}  
 
 .modal-backdrop {
   position: fixed;
@@ -5553,11 +5558,11 @@ textarea.form-control-lg {
   line-height: 1.5;
 }
 
-.modal-body {
+ .modal-body {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
-}
+}  
 
 .modal-footer {
   display: flex;
@@ -5574,7 +5579,14 @@ textarea.form-control-lg {
   margin: 0.25rem;
 }
 
-@media (min-width: 576px) {
+.LightboxImage {
+  max-height: 100%;
+  border: solid 15px white;
+  
+  
+  } 
+
+ @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5593,16 +5605,18 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
-  .modal-lg,
-.modal-xl {
+  .modal-dialog {
     max-width: 800px;
+    margin: 1.75rem auto;
   }
 }
 @media (min-width: 1200px) {
-  .modal-xl {
-    max-width: 1140px;
+  .modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
   }
-}
+} 
+
 .modal-fullscreen {
   width: 100vw;
   max-width: none;
@@ -5624,7 +5638,7 @@ textarea.form-control-lg {
   border-radius: 0;
 }
 
-@media (max-width: 575.98px) {
+ @media (max-width: 575.98px) {
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -5733,7 +5747,12 @@ textarea.form-control-lg {
   .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
-}
+} 
+
+/* 
+///////////////////////////////////////////////////////////// MODAL FIN /////////////////////////////////////////////////////
+*/
+
 .tooltip {
   position: absolute;
   z-index: 1080;
